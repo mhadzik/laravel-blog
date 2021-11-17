@@ -8,13 +8,10 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <article>
-        <h1><a href="/posts/my-first-post">My first post</a></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id culpa voluptates dicta corrupti et magnam ab quos perspiciatis. Eveniet distinctio error optio ut quibusdam dolore voluptatibus enim impedit ipsam?</p>
-    </article>
-    <article>
-        <h1><a href="/posts/my-second-post">My second post</a></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id culpa voluptates dicta corrupti et magnam ab quos perspiciatis. Eveniet distinctio error optio ut quibusdam dolore voluptatibus enim impedit ipsam?</p>
-    </article>
+    <?php foreach ($posts as $post) : ?>
+        <article>
+            <?= $post; ?>
+        </article>
+    <?php endforeach; ?>
 </body>
 </html>
